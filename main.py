@@ -2,7 +2,7 @@ import streamlit as st
 from mistralai import Mistral
 
 def generate_response(user_input):
-    api_key = "B9I8qboZhE42PjvnGkxoctSgWBFmgwTa"
+    api_key = ""
     #regardez mon readme Spec2match pour la clé API
     model = "mistral-large-latest"
 

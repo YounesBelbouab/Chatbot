@@ -1,9 +1,12 @@
 import streamlit as st
 from mistralai import Mistral
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def generate_response(user_input):
-    api_key = ""
-    #regardez mon readme Spec2match pour la clé API
+    api_key = os.getenv('API_KEY')
     model = "mistral-large-latest"
 
     client = Mistral(api_key=api_key)
